@@ -1,0 +1,73 @@
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    justify-content: left;
+    align-items: center;
+   
+
+  transition: top 500ms ease-in-out;
+
+}
+
+.nav li{
+    list-style-type: none;
+    justify-content: space-between;
+    
+}
+
+.nav ul{
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+    
+}
+
+footer {
+    padding-top: 20px;
+    font-size: 0.75rem;
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        display: flex;                            
+        justify-content: space-between; 
+        /* The space-between setting will orient the nav list items so that they stick to the edges and the center and are equidistant from each other.*/
+    } 
+    
+
+    .nav ul {
+        display: flex;
+        flex-direction: row; 
+        /* This reorients the nav's elements from vertical to horizontal. */
+    }
+}
